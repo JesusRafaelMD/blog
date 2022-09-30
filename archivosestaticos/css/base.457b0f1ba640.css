@@ -1,0 +1,75 @@
+/* static/css/base.css */
+header h1 a {
+    color: #E7F6F2;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+header{
+    border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+    display:flex;
+}
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-right {
+    display:flex;
+    padding-top: 2rem;
+}
+
+.entrada-publicacion {
+    margin-bottom:2rem;
+}
+
+.entrada-publicacion h2 {
+    margin:0.5rem 0;
+}
+
+.entrada-publicacion h2 a, 
+.entrada-publicacion h2 a:visited {
+    color: #395B64;
+    text-decoration: none;
+}
+
+.entrada-publicacion p {
+    margin: 0;
+    font-weight: 400;
+}
+
+.entrada-publicacion h2 a:hover {
+    color:red;
+}
+
+p {
+    color: #E7F6F2;
+}
+
+.gradient {
+    /*width: 20vw;
+    height: 20vw;*/
+    padding: 2rem;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #9581F4, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

@@ -1,0 +1,11 @@
+<!-- plantillas/detalle_publicaciones.html -->
+{% extends 'base.html' %}
+
+{% block content %} 
+    <div class="entrada-publicacion">
+        <h2>{{ publicacion.titulo }}</h2>
+        <p>{{ publicacion.cuerpo }}</p>
+    </div>
+    <p><a href="{% url 'editar_publicacion' publicacion.pk %}">Editar publicacion de Blog</a></p>
+    <p><a href="{% url 'eliminar_publicacion' publicacion.pk %}">Eliminar publicacion</a></p>
+{% endblock content %} 
